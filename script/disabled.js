@@ -9,7 +9,7 @@ document.addEventListener("click", function (event) {
         clickedButton.style.backgroundColor = "#B0B0B0";
 
 
-        alert("Task Completed!");
+        alert("Board Updated Successfully");
 
         //task number komano//
 
