@@ -20,7 +20,7 @@
                 <div class="flex gap-10 items-center">
                     <div class="flex gap-4 items-center justify-center bg-gray-200 rounded-3xl px-3 py-2">
                         <img class="h-8 w-8" src="assets/checkbox.png" alt="checkbox">
-                        <h3 class="text-3xl font-bold">23</h3>
+                        <h3 id="nav-digit-count" class="text-3xl font-bold">23</h3>
                     </div>
                     <div class="bg-gray-200 p-3 rounded-full mr-2">
                         <img id="colorBtn" class="cursor-pointer" src="assets/theme-btn.png" alt="">
@@ -39,7 +39,7 @@
                             </div>
                             <div>
                                 <p>Task Assigned</p>
-                                <h4 class="text-3xl font-bold">06</h4>
+                                <h4 class="text-3xl font-bold">0<span id="task-assigned" class="text-3xl font-bold">6</span></h4>
                             </div>
                         </div>
 
@@ -67,9 +67,9 @@
                     </div>
                     <hr class="border-t-2 border-dotted border-gray-500">
                     <div class="grid grid-cols-3 gap-5 p-4">
-                        <div class="bg-gray-200 p-3 rounded-lg">
+                        <div class="bg-gray-200 p-3 rounded-lg task-card">
                             <p class="bg-white py-2 px-3 rounded-lg max-w-fit">ShopEase</p>
-                            <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h3>
+                            <h3 class="text-2xl font-medium my-4 task-title">Fix Mobile Button Issue</h3>
                             <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Debug using Chrome DevTools,
                                 check for overlapping.....</p>
 
@@ -80,15 +80,14 @@
                                 </div>
                                 <div>
                                     <button
-                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer">Completed</button>
+                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer completed-btn">Completed</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-200 p-3 rounded-lg">
-                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">ShopEase</p>
-                            <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h3>
-                            <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Debug using Chrome DevTools,
-                                check for overlapping.....</p>
+                        <div class="bg-gray-200 p-3 rounded-lg task-card">
+                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">CloudSync</p>
+                            <h3 class="text-2xl font-medium my-4 task-title">Add Dark Mode </h3>
+                            <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Store the user's preference in localstorage, update CSS.....</p> 
 
                             <div class="flex items-center justify-between py-4">
                                 <div>
@@ -97,16 +96,16 @@
                                 </div>
                                 <div>
                                     <button
-                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer">Completed</button>
+                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer completed-btn">Completed</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-200 p-3 rounded-lg">
-                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">ShopEase</p>
-                            <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h3>
+                        <div class="bg-gray-200 p-3 rounded-lg task-card">
+                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">SwitPay</p>
+                            <h3 class="text-2xl font-medium my-4 task-title">Optimize Home page</h3>
                             <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Debug using Chrome DevTools,
                                 check for overlapping.....</p>
-
+          
                             <div class="flex items-center justify-between py-4">
                                 <div>
                                     <p>Deadline</p>
@@ -114,13 +113,13 @@
                                 </div>
                                 <div>
                                     <button
-                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer">Completed</button>
+                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer completed-btn">Completed</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-200 p-3 rounded-lg">
-                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">ShopEase</p>
-                            <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h3>
+                        <div class="bg-gray-200 p-3 rounded-lg task-card">
+                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">Meta</p>
+                            <h3 class="text-2xl font-medium my-4 task-title">Add new emoji         </h3>
                             <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Debug using Chrome DevTools,
                                 check for overlapping.....</p>
 
@@ -131,13 +130,13 @@
                                 </div>
                                 <div>
                                     <button
-                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer">Completed</button>
+                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer completed-btn">Completed</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-200 p-3 rounded-lg">
-                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">ShopEase</p>
-                            <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h3>
+                        <div class="bg-gray-200 p-3 rounded-lg task-card">
+                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">Google LLC</p>
+                            <h3 class="text-2xl font-medium my-4 task-title">Integrate Open API </h3>
                             <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Debug using Chrome DevTools,
                                 check for overlapping.....</p>
 
@@ -148,13 +147,13 @@
                                 </div>
                                 <div>
                                     <button
-                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer">Completed</button>
+                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer completed-btn">Completed</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-gray-200 p-3 rounded-lg">
-                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">ShopEase</p>
-                            <h3 class="text-2xl font-medium my-4">Fix Mobile Button Issue</h3>
+                        <div class="bg-gray-200 p-3 rounded-lg task-card">
+                            <p class="bg-white py-2 px-3 rounded-lg max-w-fit">Glassdoar</p>
+                            <h3 class="text-2xl font-medium my-4 task-title">Improve Job searching</h3>
                             <p class="bg-white px-3 py-3 mx-1 rounded-xl text-gray-500">Debug using Chrome DevTools,
                                 check for overlapping.....</p>
 
@@ -165,7 +164,7 @@
                                 </div>
                                 <div>
                                     <button
-                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer">Completed</button>
+                                        class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer completed-btn">Completed</button>
                                 </div>
                             </div>
                         </div>
@@ -183,11 +182,11 @@
                             <h5 class="text-lg font-medium">Activity Log</h5>
                         </div>
                     </div>
-                    <button class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer mb-4">Clear
+                    <button id="clear-history" class="text-white bg-blue-600 py-2 px-5 rounded-xl cursor-pointer mb-4">Clear
                         History</button>
                 </div>
                 <hr class="border-t-2 border-dotted border-gray-500 px-4">
-                <div>
+                <div id="activity-log" class="p-4">
 
                 </div>
             </section>
@@ -197,6 +196,8 @@
     <script src="script/date.js"></script>
     <script src="script/pageswitch.js"></script>
     <script src="script/bgchange.js"></script>
+    <script src="script/disabled.js"></script>
+    <script src="script/history.js"></script>
 </body>
 
 </html>
