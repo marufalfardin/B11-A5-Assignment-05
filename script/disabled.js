@@ -18,18 +18,19 @@ document.addEventListener("click", function (event) {
 
         if (taskCount > 0) {
             taskAssigned.innerText = taskCount - 1;
-           
-        }
-  
+            if (taskCount === 1) {
+                alert('Congrats!!! You have completed all the current task, Now go and enjoy your day');
+            } 
+        } 
+
+
         //nav bar number increased//
 
         const navCount = document.getElementById("nav-digit-count");
         const convertedNavCount = parseInt(navCount.innerText);
         navCount.innerText = convertedNavCount + 1;
 
-        if (taskCount === 0) {
-            alert("All tasks are completed!");
-        }
+       
     }
 });
 
